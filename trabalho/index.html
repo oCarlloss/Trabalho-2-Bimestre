@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho 2º Bimestre - Fundamentos Programação Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Trabalho 2º Bimestre - Carlos Fernando Chini Ra:60008430
+  </h1>
+
+  <section id="triangulo">
+    <h2>1️⃣ Encontre o Triângulo</h2>
+    <input type="number" id="x" placeholder="Lado X">
+    <input type="number" id="y" placeholder="Lado Y">
+    <input type="number" id="z" placeholder="Lado Z">
+    <button onclick="verificarTriangulo()">Verificar</button>
+    <div class="resposta-modelo">
+      <p id="resultado-triangulo"></p>
+      <svg id="desenho-triangulo" width="150" height="150"></svg>
+    </div>
+  </section>
+
+   <section id="imc">
+    <h2>2️⃣ Calculadora IMC</h2>
+    <input type="number" id="peso" placeholder="Peso (kg)">
+    <input type="number" id="altura" placeholder="Altura (m)">
+    <button onclick="calcularIMC()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-imc"></p>
+    </div>
+  </section>
+
+  <section id="imposto">
+    <h2>3️⃣ Calculadora de Impostos</h2>
+    <input type="number" id="ano" placeholder="Ano do carro">
+    <input type="number" id="valor" placeholder="Valor do carro (R$)">
+    <button onclick="calcularImposto()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-imposto"></p>
+    </div>
+  </section>
+
+  <section id="salario">
+    <h2>4️⃣ Calculadora de Salário</h2>
+    <input type="number" id="salario" placeholder="Salário atual (R$)">
+    <input type="text" id="cargo" placeholder="Cargo">
+    <button onclick="calcularSalario()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-salario"></p>
+    </div>
+  </section>
+
+  <section id="credito">
+    <h2>5️⃣ Calculadora de Crédito Bancário</h2>
+    <input type="number" id="saldo" placeholder="Saldo médio (R$)">
+    <button onclick="calcularCredito()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-credito"></p>
+    </div>
+  </section>
+
+  <section id="lanchonete">
+    <h2>6️⃣ Lanchonete</h2>
+    <input type="number" id="codigo" placeholder="Código do item">
+    <input type="number" id="quantidade" placeholder="Quantidade">
+    <button onclick="calcularLanche()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-lanche"></p>
+    </div>
+  </section>
+
+  <section id="vendas">
+    <h2>7️⃣ Sistema de Vendas</h2>
+    <input type="number" id="preco" placeholder="Preço do produto (R$)">
+    <input type="text" id="condicao" placeholder="Código da condição (a/b/c/d)">
+    <button onclick="calcularVenda()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-venda"></p>
+    </div>
+  </section>
+
+  <section id="pagamento">
+    <h2>8️⃣ Sistema de Pagamento</h2>
+    <input type="number" id="nivel" placeholder="Nível do professor (1/2/3)">
+    <input type="number" id="aulas" placeholder="Horas/aula por semana">
+    <button onclick="calcularPagamento()">Calcular</button>
+    <div class="resposta-modelo">
+      <p id="resultado-pagamento"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
